@@ -21,6 +21,7 @@ main {
   border-radius: 24px;
   background: white;
   box-shadow: 0 16px 60px #24304712;
+  text-align: center;
 }
 
 .badge {
@@ -34,7 +35,7 @@ main {
 }
 
 h1 { font-size: 42px; letter-spacing: -1.5px; margin: 24px 0 12px; }
-p { line-height: 1.6; }
+.count { margin: 28px 0 8px; color: #6844cf; font-size: 72px; font-weight: 700; line-height: 1; }
 
 button {
   margin-top: 16px;
@@ -49,4 +50,3 @@ button {
 
 button:hover { background: #5535ae; }
 button:focus-visible { outline: 3px solid #b5a0ef; outline-offset: 3px; }
-.hint { margin-top: 24px; color: #64748b; font-size: 14px; }
