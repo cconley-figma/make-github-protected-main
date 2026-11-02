@@ -5,13 +5,17 @@ export default function App() {
 
   return (
     <main>
-      <span className="badge">GitHub import demo</span>
-      <h1>Hello, Make!</h1>
-      <p>A small React app for trying the GitHub clone and import flow.</p>
-      <button onClick={() => setCount((value) => value + 1)}>
-        Clicked {count} {count === 1 ? 'time' : 'times'}
-      </button>
-      <p className="hint">Edit this page in Make to try a change.</p>
+      <section className="counter-card">
+        <h1>GitHub Connect E2E 2026-11-02</h1>
+        <p className="marker">Snapshot checkpoint marker 7421</p>
+        <p className="count" aria-live="polite">{count}</p>
+        <button
+          type="button"
+          onClick={() => setCount((currentCount) => currentCount + 1)}
+        >
+          Increment checkpoint
+        </button>
+      </section>
     </main>
   );
 }

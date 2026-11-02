@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, system-ui, sans-serif;
-  color: #243047;
-  background: #f2f5fa;
+  color: #ffffff;
+  background: #faf5ff;
   font-synthesis: none;
 }
 
@@ -10,43 +10,54 @@
 body {
   margin: 0;
   min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
   display: grid;
   place-items: center;
   padding: 24px;
 }
 
-main {
-  width: min(100%, 540px);
-  padding: 48px;
-  border-radius: 24px;
-  background: white;
-  box-shadow: 0 16px 60px #24304712;
+.counter-card {
+  width: min(100%, 384px);
+  padding: 32px;
+  border-radius: 16px;
+  background: #7e22ce;
+  text-align: center;
+  box-shadow: 0 20px 35px #d8b4fe80;
 }
 
-.badge {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: #eee9ff;
-  color: #6844cf;
-  font-size: 13px;
-  font-weight: 600;
+h1 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.25;
 }
 
-h1 { font-size: 42px; letter-spacing: -1.5px; margin: 24px 0 12px; }
-p { line-height: 1.6; }
+.marker {
+  margin: 12px 0 0;
+  color: #f3e8ff;
+  font-size: 14px;
+}
+
+.count {
+  margin: 32px 0;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
 
 button {
-  margin-top: 16px;
   padding: 12px 20px;
   border: 0;
-  border-radius: 10px;
-  background: #6844cf;
-  color: white;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #7e22ce;
   font: inherit;
+  font-weight: 600;
   cursor: pointer;
 }
 
-button:hover { background: #5535ae; }
-button:focus-visible { outline: 3px solid #b5a0ef; outline-offset: 3px; }
-.hint { margin-top: 24px; color: #64748b; font-size: 14px; }
+button:hover { background: #f3e8ff; }
+button:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }
